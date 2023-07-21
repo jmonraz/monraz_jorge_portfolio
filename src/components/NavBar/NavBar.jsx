@@ -6,6 +6,7 @@ const NavBar = ({ children }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleNavLinkClick = (event, link) => {
+        console.log(activeLink);
         event.preventDefault();
         const targetId = event.target.getAttribute("href");
         const targetElement = document.querySelector(targetId);
