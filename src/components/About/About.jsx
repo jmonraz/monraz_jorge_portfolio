@@ -29,7 +29,7 @@ const About = ({id}) => {
     }, []);
 
     return (
-        <section ref={aboutRef} className="about-section" id={id} >
+        <section ref={aboutRef} className="about-section"  id={id}>
             <div className="about-container" >
                 <div className="about-row">
                     <div className="about-col">
@@ -37,7 +37,7 @@ const About = ({id}) => {
                     </div>
                     <div className="about-col">
                         <div className="about-heading">
-                            <p className="green about-title">ABOUT ME</p>
+                            <p className="green about-title" >ABOUT ME</p>
                             <div className="about-line" />
                         </div>
 

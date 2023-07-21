@@ -1,9 +1,9 @@
 import React from "react";
 import "./Divider.css";
 
-const Divider = () => {
+const Divider = ({id}) => {
     return(
-        <div className="divider">
+        <div className="divider" id={id}>
         </div>
     );
 };

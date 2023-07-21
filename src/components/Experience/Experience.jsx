@@ -44,6 +44,7 @@ const Experience = ({ id }) => {
                         <div className="experience-heading">
                             <div className="experience-line" />
                             <p className="green experience-title">EXPERIENCE</p>
+                            <div className="experience-line" />
                         </div>
 
                         <div className="experience-body">
