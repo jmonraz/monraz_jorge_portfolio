@@ -48,7 +48,7 @@ const Projects = ({ id }) => {
                             and a custom-built machine learning model.</span> It empowers users to efficiently manage patient information while providing valuable health 
                             analysis predictions. With this system, users can accurately assess the risk of developing conditions like diabetes, heart disease, and more. 
                             The integration of cutting-edge technologies and intuitive user interfaces ensures a seamless and comprehensive healthcare management experience.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/medipred" target="_blank">REPOSITORY</a>
+                            <a className="a-button top-space" href="https://github.com/jmonraz/medipred" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                 </div>
                 <div className="projects-row">
@@ -58,7 +58,7 @@ const Projects = ({ id }) => {
                             specific conditions. This innovative tool was specifically designed to compare a shipping invoice with a Warehouse Management System (WMS) 
                             invoice, enabling users to identify and address any discrepancies in shipping costs. By leveraging advanced data manipulation and cleansing 
                             techniques, Report Comparer ensures accurate and efficient analysis, preventing financial losses and enhancing cost optimization.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/report_comparer" target="_blank">REPOSITORY</a>
+                            <a className="a-button top-space" href="https://github.com/jmonraz/report_comparer" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                     <div className="projects-sub-col">
                         <p className="green app-text">REPORT COMPARER</p>
@@ -74,7 +74,7 @@ const Projects = ({ id }) => {
                             manage outbound and inbound orders, and optimize their warehouse operations. By leveraging advanced algorithms, 
                             Aegis IMS offers enhanced features like sorting and put-away, enabling users to streamline their inventory processes 
                             and maximize efficiency.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/InventoryManagementSystem" target="_blank">REPOSITORY</a>
+                            <a className="a-button top-space" href="https://github.com/jmonraz/InventoryManagementSystem" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                 </div>
                 <div className="projects-row">
@@ -84,14 +84,14 @@ const Projects = ({ id }) => {
                             allows users to capture visitor photos and store them securely in Firebase Storage. By implementing this feature, 
                             the application enables efficient tracking of individuals entering the facility. Additionally, the application sends 
                             automated email notifications upon check-in and check-out, providing management with real-time updates on visitor activities.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/3PLWINNER.Visitor.Check.In.App" target="_blank">REPOSITORY</a>
+                            <a className="a-button top-space" href="https://github.com/jmonraz/3PLWINNER.Visitor.Check.In.App" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                     <div className="projects-sub-col">
                         <p className="green app-text">VISITOR CHECK IN</p>
                     </div>
                 </div>
                 <div className="projects-row">
-                    <a className="check-repos" href="https://github.com/jmonraz?tab=repositories" target="_blank">Check More Repos</a>
+                    <a className="check-repos" href="https://github.com/jmonraz?tab=repositories" target="_blank" rel="noreferrer">Check More Repos</a>
                 </div>
             </div>
         </section>
