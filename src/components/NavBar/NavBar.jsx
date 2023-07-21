@@ -5,6 +5,7 @@ const NavBar = ({children}) => {
     const [activeLink, setActiveLink] = useState("");
 
     const handleNavLinkClick = (event, link) => {
+        console.log(activeLink)
         event.preventDefault();
         const targetId = event.target.getAttribute("href");
         const targetElement = document.querySelector(targetId);

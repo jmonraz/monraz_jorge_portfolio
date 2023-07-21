@@ -12,6 +12,7 @@ const Experience = ({ id }) => {
     const experienceRef = useRef(null);
 
     useEffect(() => {
+        let ref = experienceRef.current;
         const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -21,13 +22,15 @@ const Experience = ({ id }) => {
                 }
             });
         });
-        sectionObserver.observe(experienceRef.current);
+        sectionObserver.observe(ref);
 
         // Clean up the observer
         return () => {
-            sectionObserver.unobserve(experienceRef.current);
-        };
-    }, [experienceRef.current]);
+            if (ref) {
+              sectionObserver.unobserve(ref);
+            }
+          };
+    }, []);
 
     const handleResumeButtonClick = () => {
         window.open(resume, "_blank");

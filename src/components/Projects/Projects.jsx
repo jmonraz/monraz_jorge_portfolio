@@ -6,6 +6,7 @@ const Projects = ({ id }) => {
     const projectsRef = useRef(null);
 
     useEffect(() => {
+        let ref = projectsRef.current;
         const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -15,12 +16,14 @@ const Projects = ({ id }) => {
                 }
             });
         });
-        sectionObserver.observe(projectsRef.current);
+        sectionObserver.observe(ref);
 
         // Clean up the observer
         return () => {
-            sectionObserver.unobserve(projectsRef.current);
-        };
+            if (ref) {
+              sectionObserver.unobserve(ref);
+            }
+          };
     }, []);
 
     return (

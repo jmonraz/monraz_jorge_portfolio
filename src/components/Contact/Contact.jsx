@@ -10,6 +10,7 @@ const Contact = ({ id }) => {
     const contactRef = useRef(null);
 
     useEffect(() => {
+        let ref = contactRef.current;
         const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -19,13 +20,15 @@ const Contact = ({ id }) => {
                 }
             });
         });
-        sectionObserver.observe(contactRef.current);
+        sectionObserver.observe(ref);
 
         // Clean up the observer
         return () => {
-            sectionObserver.unobserve(contactRef.current);
-        };
-    }, [contactRef.current]);
+            if (ref) {
+              sectionObserver.unobserve(ref);
+            }
+          };
+    }, []);
     
     return (
         <section id={id} className="contact-section" ref={contactRef}>

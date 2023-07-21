@@ -8,6 +8,7 @@ const Hero = ({id}) => {
     const heroRef = useRef(null);
 
     useEffect(() => {
+        let ref = heroRef.current;
         const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -17,13 +18,15 @@ const Hero = ({id}) => {
                 }
             });
         });
-        sectionObserver.observe(heroRef.current);
+        sectionObserver.observe(ref);
 
         // Clean up the observer
         return () => {
-            sectionObserver.unobserve(heroRef.current);
-        };
-    }, [heroRef.current]);
+            if (ref) {
+              sectionObserver.unobserve(ref);
+            }
+          };
+    }, []);
     return (
         <section ref={heroRef} className="hero-section" id={id}>
             <div className="hero-container">
