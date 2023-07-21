@@ -8,6 +8,7 @@ const About = ({id}) => {
     const aboutRef = useRef(null);
 
     useEffect(() => {
+        let ref = aboutRef.current;
         const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -17,12 +18,12 @@ const About = ({id}) => {
                 }
             });
         });
-        sectionObserver.observe(aboutRef.current);
+        sectionObserver.observe(ref);
 
         // Clean up the observer
         return () => {
-            if (aboutRef.current) {
-              observer.unobserve(aboutRef.current);
+            if (ref) {
+              sectionObserver.unobserve(ref);
             }
           };
     }, []);
