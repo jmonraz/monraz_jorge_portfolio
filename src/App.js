@@ -15,15 +15,23 @@ const App = () => {
       <NavBar>JM</NavBar>
         <SmallDivider id="home" />
         <Hero />
+      
+      <div className='content-container'> 
         <SmallDivider id="about" />
         <About />
+      </div>
+      <div className='content-container'>
         <SmallDivider id="experience" />
         <Experience />
+      </div>
+      <div className='content-container'>
         <SmallDivider id="projects" />
         <Projects />
+      </div>
+      <div className='content-container'>
         <SmallDivider id="contact" />
         <Contact id="contact" />
-
+      </div>
     </div>
   );
 };
