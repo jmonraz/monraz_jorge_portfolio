@@ -21,9 +21,11 @@ const About = ({id}) => {
 
         // Clean up the observer
         return () => {
-            sectionObserver.unobserve(aboutRef.current);
-        };
-    }, [aboutRef.current]);
+            if (aboutRef.current) {
+              observer.unobserve(aboutRef.current);
+            }
+          };
+    }, []);
 
     return (
         <section ref={aboutRef} className="about-section" id={id} >
