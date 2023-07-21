@@ -27,7 +27,7 @@ const Experience = ({ id }) => {
         return () => {
             sectionObserver.unobserve(experienceRef.current);
         };
-    }, []);
+    }, [experienceRef.current]);
 
     const handleResumeButtonClick = () => {
         window.open(resume, "_blank");
@@ -65,7 +65,7 @@ const Experience = ({ id }) => {
                         <button className="main-button" onClick={handleResumeButtonClick}>RESUME</button>
                     </div>
                     <div className="experience-col">
-                        <img src={techImage} className="tech-image" />
+                        <img src={techImage} className="tech-image" alt="tech_image" />
                     </div>
                 </div>
             </div>

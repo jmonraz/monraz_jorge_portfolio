@@ -23,14 +23,14 @@ const About = ({id}) => {
         return () => {
             sectionObserver.unobserve(aboutRef.current);
         };
-    }, []);
+    }, [aboutRef.current]);
 
     return (
         <section ref={aboutRef} className="about-section" id={id} >
             <div className="about-container" >
                 <div className="about-row">
                     <div className="about-col">
-                        <img src={aiImage} className="ai-image" />
+                        <img src={aiImage} className="ai-image" alt="ai_image" />
                     </div>
                     <div className="about-col">
                         <div className="about-heading">

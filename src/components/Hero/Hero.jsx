@@ -23,7 +23,7 @@ const Hero = ({id}) => {
         return () => {
             sectionObserver.unobserve(heroRef.current);
         };
-    }, []);
+    }, [heroRef.current]);
     return (
         <section ref={heroRef} className="hero-section" id={id}>
             <div className="hero-container">

@@ -25,7 +25,7 @@ const Contact = ({ id }) => {
         return () => {
             sectionObserver.unobserve(contactRef.current);
         };
-    }, []);
+    }, [contactRef.current]);
     
     return (
         <section id={id} className="contact-section" ref={contactRef}>
