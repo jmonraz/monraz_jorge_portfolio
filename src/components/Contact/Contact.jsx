@@ -47,10 +47,9 @@ const Contact = ({ id }) => {
                             <p className="light-grey space">(619) 488-0309</p>
                         </div>
                         <div className="contact-row">
-                            <a href="https://github.com/jmonraz" target="_blank" rel="noreferrer"><img src={githubIcon} className="contact-icon" alt="github_icon" /></a>
+                            <a href="https://github.com/jmonraz" target="_blank" rel="noreferrer"><img src={githubIcon} className="contact-icon space" alt="github_icon" /></a>
                             <a href="https://www.linkedin.com/in/jorge-monraz-585753122/" target="_blank" rel="noreferrer"><img src={linkedinIcon} className="contact-icon" alt="linkedin_icon" /></a>
                         </div>
-
                     </div>
                 </div>
 

@@ -1,6 +1,7 @@
 .hero-section {
     opacity: 0;
     transition: opacity 0.8s ease-in;
+    margin-top: 65px;
 }
 
 .hero-section.visible {
@@ -9,7 +10,6 @@
 
 .hero-container {
     height: calc(100vh - 75px);
-    margin-top: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;

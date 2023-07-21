@@ -13,16 +13,17 @@ const App = () => {
   return (
     <div className='app-container'>
       <NavBar>JM</NavBar>
-      <SmallDivider id="home" />
-      <Hero />
-      <SmallDivider id="about"/>
-      <About/>
-      <SmallDivider id="experience"/>
-      <Experience />
-      <SmallDivider id="projects" />
-      <Projects />
-      <SmallDivider id="contact" />
-      <Contact id="contact" />
+        <SmallDivider id="home" />
+        <Hero />
+        <SmallDivider id="about" />
+        <About />
+        <SmallDivider id="experience" />
+        <Experience />
+        <SmallDivider id="projects" />
+        <Projects />
+        <SmallDivider id="contact" />
+        <Contact id="contact" />
+
     </div>
   );
 };
