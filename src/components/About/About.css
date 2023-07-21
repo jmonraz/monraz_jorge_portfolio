@@ -55,3 +55,20 @@
     width: 45%;
     min-width: 250px;
 }
+
+@media (max-width: 768px) {
+    .ai-image {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-line {
+        display: none;
+    }
+    
+}

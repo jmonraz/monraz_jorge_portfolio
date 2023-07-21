@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Experience.css";
 
 // images
-import techImage from "../../assets/img/technologies_png.png";
+import experienceImage from "../../assets/img/technologies_png.png";
 
 // pdf
 import resume from "../../assets/pdf/MonrazJorgeResume2023.pdf";
@@ -45,6 +45,7 @@ const Experience = ({ id }) => {
                             <div className="experience-line" />
                             <p className="green experience-title">EXPERIENCE</p>
                         </div>
+
                         <div className="experience-body">
                             <p className="light-grey">
                                 As a Systems Administrator at 3PLWINNER, I successfully designed and implemented network environments,
@@ -66,9 +67,6 @@ const Experience = ({ id }) => {
                             </p>
                         </div>
                         <button className="main-button" onClick={handleResumeButtonClick}>RESUME</button>
-                    </div>
-                    <div className="experience-col">
-                        <img src={techImage} className="tech-image" alt="tech_image" />
                     </div>
                 </div>
             </div>

@@ -19,7 +19,6 @@
 
 .projects-row {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: flex-start;
     padding: 50px 0px;
@@ -71,4 +70,35 @@
 .check-repos:hover {
     border-bottom: 2px solid #43ec76;
     color: #dadada;
+}
+
+@media (max-width: 768px) {
+    .projects-sub-col {
+        display: none;
+    }
+
+    .projects-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects-row {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .projects-sub-col {
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects-line {
+        display: none;
+    }
+
+    a {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

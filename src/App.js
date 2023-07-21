@@ -17,7 +17,7 @@ const App = () => {
       <Hero id="home" />
       <Divider/>
       <About id="about" />
-      <Divider />
+      <Divider/>
       <Experience id="experience"/>
       <Divider />
       <Projects id="projects" />
