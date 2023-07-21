@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Experience.css";
 
 // images
-import experienceImage from "../../assets/img/technologies_png.png";
+// import experienceImage from "../../assets/img/technologies_png.png";
 
 // pdf
 import resume from "../../assets/pdf/MonrazJorgeResume2023.pdf";
