@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import "./Projects.css";
+import styles from "./Projects.module.css";
+
+// img
+import todoApp from "../../assets/img/todo_app.png";
 
 const Projects = ({ id }) => {
 
@@ -21,9 +25,9 @@ const Projects = ({ id }) => {
         // Clean up the observer
         return () => {
             if (ref) {
-              sectionObserver.unobserve(ref);
+                sectionObserver.unobserve(ref);
             }
-          };
+        };
     }, []);
 
     return (
@@ -47,21 +51,21 @@ const Projects = ({ id }) => {
                     </div>
                     <div className="projects-sub-col">
                         <p className="light-grey normal-text light-margin">Medipred - a healthcare management system is a robust software application developed using a combination of
-                         <span className="light-green"> React, Django, PostgreSQL, 
-                            and a custom-built machine learning model.</span> It empowers users to efficiently manage patient information while providing valuable health 
-                            analysis predictions. With this system, users can accurately assess the risk of developing conditions like diabetes, heart disease, and more. 
+                            <span className="light-green"> React, Django, PostgreSQL,
+                                and a custom-built machine learning model.</span> It empowers users to efficiently manage patient information while providing valuable health
+                            analysis predictions. With this system, users can accurately assess the risk of developing conditions like diabetes, heart disease, and more.
                             The integration of cutting-edge technologies and intuitive user interfaces ensures a seamless and comprehensive healthcare management experience.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/medipred" target="_blank" rel="noreferrer">REPOSITORY</a>
+                        <a className="a-button top-space" href="https://github.com/jmonraz/medipred" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                 </div>
                 <div className="projects-row">
                     <div className="projects-sub-col">
-                        <p className="light-grey normal-text light-margin">Report Comparer - a powerful application developed using <span className="light-green">Flask, Python, and Pandas</span> to compare 
-                        and consolidate two reports based on 
-                            specific conditions. This innovative tool was specifically designed to compare a shipping invoice with a Warehouse Management System (WMS) 
-                            invoice, enabling users to identify and address any discrepancies in shipping costs. By leveraging advanced data manipulation and cleansing 
+                        <p className="light-grey normal-text light-margin">Report Comparer - a powerful application developed using <span className="light-green">Flask, Python, and Pandas</span> to compare
+                            and consolidate two reports based on
+                            specific conditions. This innovative tool was specifically designed to compare a shipping invoice with a Warehouse Management System (WMS)
+                            invoice, enabling users to identify and address any discrepancies in shipping costs. By leveraging advanced data manipulation and cleansing
                             techniques, Report Comparer ensures accurate and efficient analysis, preventing financial losses and enhancing cost optimization.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/report_comparer" target="_blank" rel="noreferrer">REPOSITORY</a>
+                        <a className="a-button top-space" href="https://github.com/jmonraz/report_comparer" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                     <div className="projects-sub-col">
                         <p className="green app-text">REPORT COMPARER</p>
@@ -72,25 +76,44 @@ const Projects = ({ id }) => {
                         <p className="green app-text">AEGIS</p>
                     </div>
                     <div className="projects-sub-col">
-                        <p className="light-grey normal-text light-margin">Aegis IMS - a robust inventory management system built with <span className="light-green">Java, Gradle, and Firebase.</span> Designed to cater to the needs of both 
-                            small and large-scale users, this comprehensive solution empowers businesses to effectively track inventory, 
-                            manage outbound and inbound orders, and optimize their warehouse operations. By leveraging advanced algorithms, 
-                            Aegis IMS offers enhanced features like sorting and put-away, enabling users to streamline their inventory processes 
+                        <p className="light-grey normal-text light-margin">Aegis IMS - a robust inventory management system built with <span className="light-green">Java, Gradle, and Firebase.</span> Designed to cater to the needs of both
+                            small and large-scale users, this comprehensive solution empowers businesses to effectively track inventory,
+                            manage outbound and inbound orders, and optimize their warehouse operations. By leveraging advanced algorithms,
+                            Aegis IMS offers enhanced features like sorting and put-away, enabling users to streamline their inventory processes
                             and maximize efficiency.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/InventoryManagementSystem" target="_blank" rel="noreferrer">REPOSITORY</a>
+                        <a className="a-button top-space" href="https://github.com/jmonraz/InventoryManagementSystem" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                 </div>
                 <div className="projects-row">
                     <div className="projects-sub-col">
                         <p className="light-grey normal-text light-margin">The Visitor Check-in - is a powerful tool developed for Android using <span className="light-green">Java, Gradle, and Firebase. </span>
-                            With its intuitive interface and seamless integration with the device's front camera, this application 
-                            allows users to capture visitor photos and store them securely in Firebase Storage. By implementing this feature, 
-                            the application enables efficient tracking of individuals entering the facility. Additionally, the application sends 
+                            With its intuitive interface and seamless integration with the device's front camera, this application
+                            allows users to capture visitor photos and store them securely in Firebase Storage. By implementing this feature,
+                            the application enables efficient tracking of individuals entering the facility. Additionally, the application sends
                             automated email notifications upon check-in and check-out, providing management with real-time updates on visitor activities.</p>
-                            <a className="a-button top-space" href="https://github.com/jmonraz/3PLWINNER.Visitor.Check.In.App" target="_blank" rel="noreferrer">REPOSITORY</a>
+                        <a className="a-button top-space" href="https://github.com/jmonraz/3PLWINNER.Visitor.Check.In.App" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                     <div className="projects-sub-col">
                         <p className="green app-text">VISITOR CHECK IN</p>
+                    </div>
+                </div>
+                <div className="projects-row">
+                    <div className="projects-sub-col">
+                        <p className="green app-text">TO-DO APP</p>
+                        <div className={styles.imageContainer}>
+                            <img src={todoApp} alt="todo_app_img" className={styles.image} />
+                            <div className={styles.overlay}>
+                                <a href="https://incredible-palmier-d60822.netlify.app/" target="_blank" rel="noreferrer" className={styles.overlayButton}>CHECK APP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projects-sub-col">
+                        <p className="light-grey normal-text light-margin">The Visitor Check-in - is a powerful tool developed for Android using <span className="light-green">Java, Gradle, and Firebase. </span>
+                            With its intuitive interface and seamless integration with the device's front camera, this application
+                            allows users to capture visitor photos and store them securely in Firebase Storage. By implementing this feature,
+                            the application enables efficient tracking of individuals entering the facility. Additionally, the application sends
+                            automated email notifications upon check-in and check-out, providing management with real-time updates on visitor activities.</p>
+                        <a className="a-button top-space" href="https://github.com/jmonraz/todo_app.git" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                 </div>
                 <div className="projects-row">
