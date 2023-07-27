@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 
 // img
 import todoApp from "../../assets/img/todo_app.png";
+import medipredApp from "../../assets/img/medipred.png";
 
 const Projects = ({ id }) => {
 
@@ -48,6 +49,11 @@ const Projects = ({ id }) => {
                 <div className="projects-row">
                     <div className="projects-sub-col">
                         <p className="green app-text">MEDIPRED</p>
+                        <div className={styles.imageContainer}>
+                            <img src={medipredApp} alt="todo_app_img" className={styles.image} />
+                            <div className={styles.overlay}>
+                            </div>
+                        </div>
                     </div>
                     <div className="projects-sub-col">
                         <p className="light-grey normal-text light-margin">Medipred - a healthcare management system is a robust software application developed using a combination of
