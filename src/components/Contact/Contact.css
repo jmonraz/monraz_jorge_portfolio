@@ -6,14 +6,13 @@
 
 .contact-section.visible {
     opacity: 1;
-} 
+}
 
 .contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
     margin-top: 100px 0;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .contact-title {
-    
+
     font-size: 28px;
     margin-right: 10px;
     margin-left: 10px;
