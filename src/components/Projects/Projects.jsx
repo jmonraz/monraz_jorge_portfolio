@@ -108,11 +108,10 @@ const Projects = ({ id }) => {
                         </div>
                     </div>
                     <div className="projects-sub-col">
-                        <p className="light-grey normal-text light-margin">The Visitor Check-in - is a powerful tool developed for Android using <span className="light-green">Java, Gradle, and Firebase. </span>
-                            With its intuitive interface and seamless integration with the device's front camera, this application
-                            allows users to capture visitor photos and store them securely in Firebase Storage. By implementing this feature,
-                            the application enables efficient tracking of individuals entering the facility. Additionally, the application sends
-                            automated email notifications upon check-in and check-out, providing management with real-time updates on visitor activities.</p>
+                        <p className="light-grey normal-text light-margin">A task management application showcasing CRUD operations,
+                            designed and developed using <span className="light-green">React.</span> This project allows users to create, read, update, and delete tasks,
+                            providing a seamless user experience for efficient task management.
+                        </p>
                         <a className="a-button top-space" href="https://github.com/jmonraz/todo_app.git" target="_blank" rel="noreferrer">REPOSITORY</a>
                     </div>
                 </div>
